@@ -1,0 +1,15 @@
+
+{% extends "webpage/layout.html" %}
+    {% block body %}
+        <h1>뉴스 페이지 입니다.</h1>
+        <table>
+        {% for person in number %}
+            {% if person == "1" %}
+                <tr><th>{{person}}</tr></th>
+            {% else %}
+                {count}
+            {% endif %}
+            
+        {% endfor %}
+        </table>
+    {% endblock body %}
